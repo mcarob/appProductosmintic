@@ -3,7 +3,7 @@
         <cabecera/>
 
         <br>
-{{nombreUsuario}}
+Bienvenida {{nombreUsuario}}
 <br><br>
 
         <div class="container">

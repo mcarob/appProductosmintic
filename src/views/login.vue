@@ -76,6 +76,7 @@ export default {
         //     console.log("el token resultante es -> ")
         //   console.log(data.data.result.token);
             localStorage.username=data.data.correo_usuario;
+            localStorage.nombre=data.data.nom_usuario;
             this.$router.push('program');
              //this.$router.push('dashboard');
         }else{
