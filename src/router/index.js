@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import login from '../views/login.vue'
 import programa from '../views/program.vue';
+import agregarCategoria from '../views/agregarCategoria.vue';
 
 Vue.use(VueRouter)
 
@@ -15,6 +16,11 @@ const routes = [
         path: '/program',
         name: 'program',
         component: programa
+    },
+    {
+        path: '/agregarCategoria',
+        name: 'agregarCategoria',
+        component: agregarCategoria
     }
 ]
 const router = new VueRouter({

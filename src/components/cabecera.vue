@@ -9,7 +9,7 @@
           <b-collapse is-nav id="nav-colapsable">
             <b-navbar-nav>
               <b-nav-item-dropdown text="CATEGORIAS" right>
-                <b-dropdown-item :to="{ name: '' }">AGREGAR</b-dropdown-item>
+                <b-dropdown-item :to="{ name: 'agregarCategoria' }">AGREGAR</b-dropdown-item>
                 <b-dropdown-item>BUSCAR</b-dropdown-item>
                 <b-dropdown-item>LISTAR</b-dropdown-item>
               </b-nav-item-dropdown>

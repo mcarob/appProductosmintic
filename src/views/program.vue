@@ -4,7 +4,18 @@
 
         <br>
 Bienvenida {{nombreUsuario}}
-<br><br>
+
+<br>
+<div class="container">
+<h4 >En este sprint se va a poder hacer las siguientes acciones  </h4>
+<ul>
+  <li>Listar las categorias </li>
+  <li>Agregar Categorias (menu-> Categorias -> Agregar)</li>
+</ul>  
+</div>
+
+
+<br>
 
         <div class="container">
 
@@ -17,7 +28,7 @@ Bienvenida {{nombreUsuario}}
 
             </thead>
             <tbody>
-                <tr v-for="cat in categorias" :key="cat.cod_category">
+                <tr v-for="cat in categorias" :key="cat.cod_category" >
                     <th scope="row">{{ cat.cod_category}}</th>
                     <td>  {{cat.nom_category}} </td>
 
@@ -29,7 +40,6 @@ Bienvenida {{nombreUsuario}}
         </div>
 
 
-        <piePagina/>
     </div>
 </template>
 
@@ -52,7 +62,7 @@ export default {
         piePagina
     },
     mounted:function(){
-        let url="http://127.0.0.1:8000/categorias/todas";
+        let url="https://minticciclo3.herokuapp.com/categorias/todas";
         axios.get(url).then(
             data=>{
                 this.categorias=data.data;

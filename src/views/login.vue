@@ -7,6 +7,7 @@
           Pagina de Ingreso
         </h2>
         <p>Ingreso App</p>
+        <p>Usuario admin, Contraseña 1234</p>
       </div>
     </div>
     <div class="main">
@@ -70,7 +71,7 @@ export default {
         "correo_usuario": this.usuario,
         "pass_usuario" : md5(this.contrasena)
       };
-      axios.post('http://127.0.0.1:8000/usuarios/auth/',json)
+      axios.post('https://minticciclo3.herokuapp.com/usuarios/auth/',json)
       .then(data =>{
         if(data.status == "200"){
         //     console.log("el token resultante es -> ")
