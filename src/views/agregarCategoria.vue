@@ -18,7 +18,7 @@
           <label for="staticEmail" class="col-sm-2 col-form-label">Nombre de la Categoria</label>
           <div class="col-sm-10">
              <input type="text" class="form-control" id="formGroupExampleInput" v-model="formulario.nom_category"
-              placeholder="Ingrese el nombre de la categoria">
+              placeholder="Ingrese el nombre de la categoria" required>
           </div>
         </div>
         <button class="btn btn-primary" type="submit">Agregar Categoria </button>
