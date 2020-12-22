@@ -34,11 +34,7 @@
             >
             <div class="col-sm-10">
               <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" v-model="formulario.cod_category">
-                <option
-                  v-for="cat in categorias"
-                  v-bind:value="cat.cod_category"
-                  :key="cat.cod_category"
-                >
+                <option v-for="cat in categorias" v-bind:value="cat.cod_category" :key="cat.cod_category">
                   {{ cat.nom_category }}
                 </option>
               </select>
