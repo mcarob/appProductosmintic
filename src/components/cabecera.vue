@@ -10,14 +10,12 @@
             <b-navbar-nav>
               <b-nav-item-dropdown text="CATEGORIAS" right>
                 <b-dropdown-item :to="{ name: 'agregarCategoria' }">AGREGAR</b-dropdown-item>
-                <b-dropdown-item>BUSCAR</b-dropdown-item>
-                <b-dropdown-item>LISTAR</b-dropdown-item>
+                <b-dropdown-item :to="{ name: 'program' }">LISTAR</b-dropdown-item>
               </b-nav-item-dropdown>
 
-              <b-nav-item-dropdown text="PRODUCTOS " right disabled>
-                <b-dropdown-item :to="{ name: '' }">AGREGAR</b-dropdown-item>
-                <b-dropdown-item>BUSCAR</b-dropdown-item>
-                <b-dropdown-item>LISTAR</b-dropdown-item>
+              <b-nav-item-dropdown text="PRODUCTOS " right>
+                <b-dropdown-item :to="{ name: 'agregarProducto' }">AGREGAR</b-dropdown-item>
+                <b-dropdown-item :to="{ name: 'listarProductos' }">LISTAR</b-dropdown-item>
               </b-nav-item-dropdown>
 
               <b-nav-item-dropdown text="ClIENTES " right  disabled>
